@@ -1,0 +1,32 @@
+<div *ngFor="let obj of Info">
+    <div class="container-fluid product">
+        <div class="container">
+            <div class="box">
+              <div class="table-responsive">
+              <table>
+              <tr>
+              <div class="product-item">
+                 <td rowspan="3"><a (click)="get_data(obj.ProductName)"><img src="{{obj.imgPath}}" class="img-responsive" height="200px" width="200px" /></a></td>
+                 <td>
+                 <div class="product-content">
+                  <td><a class="product-name" href="product-detail.html">{{obj.ChildCategory}} {{obj.ProductName}}</a></td>
+                  <div class="price-section text-center">
+                       <td> <span class="price" style="text-decoration:line-through;color:#ff0000"><i class="fa fa-rupee"></i>{{obj.ProductOriPrice}}</span>
+                        <span class="price original-price"><i class="fa fa-rupee"></i>{{obj.ProductActPrice}}</span></td>
+                  </div>
+                  <div class="btn-section">
+                                      <ul>
+                                          <td><li><a id="a1" class="btn-primary" href="cart.html">Add To Cart</a></li></td>
+                                          <td><li><button id="a2" (click)="get_data(obj.ProductName)" class="btn-primary">Buy Now</button></li></td>
+                                      </ul> 
+                  </div>
+                </div>
+                </td>
+              </div>
+              </tr>
+              </table>
+              </div>
+            </div>
+        </div>
+    </div>
+    </div>

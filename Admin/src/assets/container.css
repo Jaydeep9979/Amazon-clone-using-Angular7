@@ -1,0 +1,42 @@
+.container{
+	 padding-top: 10px;
+}
+.card-header{
+	background-color: rgb(37,47,62);
+	margin-top: 100px;
+}
+h3{
+	color:white;
+}
+#id1 form{
+  text-align:center;
+  float:left;
+}
+.nav-link{
+	color:white;
+}
+
+#login{
+	background-color: rgb(243,168,71);
+	 
+}
+#rj
+{
+	color:  rgb(243,168,71);
+}
+.navbar-brand{
+	color: rgb(243,168,71);
+	 
+}
+.navbar-nav mr-auto li a
+{
+   margin:10px;
+
+}
+.table
+{
+	margin-top: 20px; 
+}
+.collapse{
+margin-top:25px;
+}

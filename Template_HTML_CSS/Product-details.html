@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product_details</title>
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600i,700,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet"> 
+  
+    <link type="text/css" rel="stylesheet" href="css/home.css"/>
+    <link type="text/css" rel="stylesheet" href="css/slider.css"/>
+  </head>
+  
+  <body>
+     <header>
+  	 		  <div class="header-top">
+            <div class="container-fluid">
+                 <div class="row">
+                     <div class="col-xl-12">
+                         <div class="logo">
+                         <a href="homepage.html">
+                             <img src="Images/R&J.jpg"></a>
+                             <!--<img src="Images/logo2.jpg">-->
+                         </div>
+                         <div class="wrap">
+                            <div class="search">
+                               <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                               <button type="submit" class="searchButton">
+                                 <!--<i class="fa fa-search"></i>-->
+                                 <img src="Images/search.png">
+                              </button>
+                            </div>
+                         </div>
+                         <div class="profile-detail">
+                               <ul>
+                                       <li><a href="#" onclick="check()" id="login">Login</a></li>
+                                       <li><a href="#" onclick="document.getElementById('id02').style.display='block'" id="signin">Sign Up</a></li>
+                                       <li><a href="cart.html" style="display: none">My Cart</a></li>
+                                       <li><a href="homepage.html">HOME</a></li>
+                               </ul>
+                         </div>	   
+                     </div>
+                 </div>
+            </div>
+         </div>
+           </header>
+           
+               
+          <div id="id02" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+      
+            <form class="modal-content animate" action="#">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="Images/R&J.jpg" alt="Avatar" class="avatar">
+              </div>
+          
+              <div class="container">
+    
+                <label for="First Name"><b>First Name</b></label>
+                <input type="text" placeholder="FirstName" name="fname" required>
+    
+                <label for="Last Name"><b>Username</b></label>
+                <input type="text" placeholder="LastName" name="lname" required>
+          
+                <label for="psw1"><b>Password</b></label>
+                <input type="password" placeholder="Password" name="psw1" required>
+    
+                <label for="psw2"><b>Re-Password</b></label>
+                <input type="password" placeholder="Re-Enter Password" name="psw2" required>
+    
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Email Address" name="email" required>
+    
+                <label for="phone_no"><b>Phone Number</b></label>
+                <input type="text" placeholder="Phone Number" name="phone_no" required>
+                  
+                <button type="submit">Register</button> 
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+              </div>
+            </form>
+           </div>
+          </div>
+    
+		
+		<div class="container-fluid breadcums-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="filter-btn">
+                        <a href="#">
+                            <i class="fa fa-filter"></i> Filter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div class="container-fluid filter-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="filter-menu">
+                        <p class="title">Brands</p>
+                        <ul class="box">
+                            <li>
+                                <label class="custome-cb">Samsung
+                                  <input type="checkbox" checked="checked">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="custome-cb">MI  
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="custome-cb">OnePlus
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="custome-cb">Apple
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="custome-cb">Lenovo
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="filter-menu">
+                        <p class="title">Price</p>
+                        <ul class="box">
+                            <li>
+                                <label class="custome-cb">5000-10000
+                                  <input type="checkbox" checked="checked">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="custome-cb">10000-20000
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="custome-cb">20000-30000
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="custome-cb">30000 - 40000
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="custome-cb">400000 +
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+                         
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="filter-menu">
+                        <p class="title">Color</p>
+                        <ul class="box">
+                            <li>
+                                <label class="custome-cb">Red
+                                  <input type="checkbox" checked="checked">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="custome-cb">Green
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="custome-cb">Blue
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="custome-cb">Orange
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="custome-cb">Pink
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+                             <li>
+                                <label class="custome-cb">Brown
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="custome-cb">White
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+                             <li>
+                                <label class="custome-cb">Yellow
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="custome-cb">Light Pink
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="filter-menu">
+                        <p class="title">Discounts</p>
+                        <ul class="box">
+                            <li>
+                                <label class="custome-cb">0- 10%
+                                  <input type="checkbox" checked="checked">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="custome-cb">10% - 15%
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="custome-cb">20% - 30%
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="custome-cb">30% -50%
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="custome-cb">60% or more
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="filter-menu">
+                        <p class="title">Gender</p>
+                        <ul class="box">
+                            <li>
+                                <input type="radio" id="test1" name="radio-group" checked>
+                                <label for="test1">Male</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="test2" name="radio-group" >
+                                <label for="test2">Female</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="test3" name="radio-group" >
+                                <label for="test3">Other</label>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="filter-menu">
+                        <p class="title">Price</p>
+                        <ul class="box">
+                            <li>
+                                <label class="custome-cb">0 - 999
+                                  <input type="checkbox" checked="checked">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="custome-cb">1000 - 1999
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="custome-cb">2000 - 3999
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="custome-cb">4000 - 10000
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="custome-cb">10000 - more
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </li>                         
+                        </ul>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <div class="filter-details">
+                        <ul>
+                            <li>
+                                Android <a href="#"><i class="fa fa-close"></i></a>
+                            </li>
+                            <li>
+                                Samsung <a href="#"><i class="fa fa-close"></i></a>
+                            </li>
+                            <li>
+                                5000-15000 <a href="#"><i class="fa fa-close"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">Clear all</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="sort-product" id="sort">
+                       <label>Sort By</label>
+                       <select>
+                           <option>A-Z Sort</option>
+                           <option>Z-A Sort</option>
+                           <option>High to Low Price</option>
+                           <option>Low to High Price</option>
+                       </select> 
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid product">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-xs-12">
+          <div class="box">
+            <div class="product-item">
+                <a href="Product-info.html"><img src="Images/samsung10.jpg" class="img-responsive" height="200px" width="200px" /></a>
+               <div class="product-content">
+                <a class="product-name" href="product-detail.html">Samsung S10</a>
+                <div class="price-section text-center">
+                      <span class="price" style="text-decoration:line-through;color:#ff0000"><i class="fa fa-rupee"></i>70000</span>
+                      <span class="price original-price"><i class="fa fa-rupee"></i>55000</span>
+                </div>
+                <div class="btn-section">
+                                    <ul>
+                                        <li><a id="a1" class="btn-primary" href="cart.html">Add To Cart</a></li>
+                                        <li><a id="a2" class="btn-primary" href="Product-info.html">Buy Now</a></li>
+                                    </ul>
+
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-12">
+          <div class="box">
+            <div class="product-item">
+                <a href="Product-info.html"><img src="Images/iphone.jpg" class="img-responsive" height="200px" width="200px" /></a>
+               <div class="product-content">
+                <a class="product-name" href="product-detail.html">Iphone X</a>
+                <div class="price-section text-center">
+                      <span class="price" style="text-decoration:line-through;color:#ff0000"><i class="fa fa-rupee"></i>110000</span>
+                      <span class="price original-price"><i class="fa fa-rupee"></i>85000</span>
+                </div>
+                <div class="btn-section">
+                                    <ul>
+                                        <li><a id="a1" class="btn-primary" href="cart.html">Add To Cart</a></li>
+                                        <li><a id="a2" class="btn-primary" href="Product-info.html">Buy Now</a></li>
+                                    </ul>
+
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-12">
+          <div class="box">
+            <div class="product-item">
+                <a href="Product-info.html"><img src="Images/googlepixel3XL.jpg" class="img-responsive" height="200px" width="200px" /></a>
+               <div class="product-content">
+                <a class="product-name" href="product-detail.html">Google Pixel3 XL</a>
+                <div class="price-section text-center">
+                      <span class="price" style="text-decoration:line-through;color:#ff0000"><i class="fa fa-rupee"></i>90000</span>
+                      <span class="price original-price"><i class="fa fa-rupee"></i>75000</span>
+                </div>
+                <div class="btn-section">
+                                    <ul>
+                                        <li><a id="a1" class="btn-primary" href="cart.html">Add To Cart</a></li>
+                                        <li><a id="a2" class="btn-primary" href="Product-info.html">Buy Now</a></li>
+                                    </ul>
+
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+           <div class="col-md-3 col-sm-4 col-xs-12">
+          <div class="box">
+            <div class="product-item">
+                <a href="Product-info.html"><img src="Images/oneplus.jpeg" class="img-responsive" height="200px" width="200px" /></a>
+               <div class="product-content">
+                <a class="product-name" href="product-detail.html">One Plus 6</a>
+                <div class="price-section text-center">
+                      <span class="price" style="text-decoration:line-through;color:#ff0000"><i class="fa fa-rupee"></i>28000</span>
+                      <span class="price original-price"><i class="fa fa-rupee"></i>36000</span>
+                </div>
+                <div class="btn-section">
+                                    <ul>
+                                        <li><a id="a1" class="btn-primary" href="cart.html">Add To Cart</a></li>
+                                        <li><a id="a2" class="btn-primary" href="Product-info.html">Buy Now</a></li>
+                                    </ul>
+
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="box">
+                  <div class="product-item">
+                      <a href="Product-info.html"><img src="Images/redmi_a3.jpg" class="img-responsive" height="200px" width="200px" /></a>
+                     <div class="product-content">
+                      <a class="product-name" href="product-detail.html">RedMI A3</a>
+                      <div class="price-section text-center">
+                            <span class="price" style="text-decoration:line-through;color:#ff0000"><i class="fa fa-rupee"></i>19000</span>
+                            <span class="price original-price"><i class="fa fa-rupee"></i>16000</span>
+                      </div>
+                      <div class="btn-section">
+                                          <ul>
+                                              <li><a id="a1" class="btn-primary" href="cart.html">Add To Cart</a></li>
+                                              <li><a id="a2" class="btn-primary" href="Product-info.html">Buy Now</a></li>
+                                          </ul>
+      
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="box">
+                  <div class="product-item">
+                      <a href="Product-info.html"><img src="Images/oneplus7.jpg" class="img-responsive" height="200px" width="200px" /></a>
+                     <div class="product-content">
+                      <a class="product-name" href="product-detail.html">OnePlus 7</a>
+                      <div class="price-section text-center">
+                            <span class="price" style="text-decoration:line-through;color:#ff0000"><i class="fa fa-rupee"></i>42000</span>
+                            <span class="price original-price"><i class="fa fa-rupee"></i>35000</span>
+                      </div>
+                      <div class="btn-section">
+                                          <ul>
+                                              <li><a id="a1" class="btn-primary" href="cart.html">Add To Cart</a></li>
+                                              <li><a id="a2" class="btn-primary" href="Product-info.html">Buy Now</a></li>
+                                          </ul>
+      
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="box">
+                  <div class="product-item">
+                      <a href="Product-info.html"><img src="Images/11pro.jpg" class="img-responsive" height="200px" width="200px" /></a>
+                     <div class="product-content">
+                      <a class="product-name" href="product-detail.html">Iphone 11 Pro</a>
+                      <div class="price-section text-center">
+                            <span class="price" style="text-decoration:line-through;color:#ff0000"><i class="fa fa-rupee"></i>75000</span>
+                            <span class="price original-price"><i class="fa fa-rupee"></i>50000</span>
+                      </div>
+                      <div class="btn-section">
+                                          <ul>
+                                              <li><a id="a1" class="btn-primary" href="cart.html">Add To Cart</a></li>
+                                              <li><a id="a2" class="btn-primary" href="Product-info.html">Buy Now</a></li>
+                                          </ul>
+      
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                 <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="box">
+                  <div class="product-item">
+                      <a href="Product-info.html"><img src="Images/note10.jpg" class="img-responsive" height="200px" width="200px" /></a>
+                     <div class="product-content">
+                      <a class="product-name" href="product-detail.html">Samsung Note10</a>
+                      <div class="price-section text-center">
+                            <span class="price" style="text-decoration:line-through;color:#ff0000"><i class="fa fa-rupee"></i>85000</span>
+                            <span class="price original-price"><i class="fa fa-rupee"></i>70000</span>
+                      </div>
+                      <div class="btn-section">
+                                          <ul>
+                                              <li><a id="a1" class="btn-primary" href="cart.html">Add To Cart</a></li>
+                                              <li><a id="a2" class="btn-primary" href="Product-info.html">Buy Now</a></li>
+                                          </ul>
+      
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+
+      </div>
+    </div>
+
+    <div class="social-media-section">
+        <ul class="social-wrap">
+            <li><a href="#" class="fb"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" class="insta"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" class="google"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#" class="skype"><i class="fa  fa-skype"></i></a></li>
+            <li><a href="#" class="youtube"><i class="fa fa-youtube-play"></i></a></li>
+            <li><a href="#" class="linkedin"><i class="fa fa-linkedin "></i></a></li>
+            <li><a href="#" class="pinterest"><i class="fa fa-pinterest-p"></i></a></li>
+        </ul>
+    </div>
+
+  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                     <div class="footer-menu">
+                        <div class="logo">
+                            <img src="Images/R&J.jpg" class="img-responsive">
+                        </div>
+                        <p>R&J provide all kind of product at best price and also provides other
+                            services.</p>
+                        <div class="social-media">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                     </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="footer-menu">
+                       <p class="title">Navigation Link</p>
+                       <div class="footer-link">
+                           <ul>
+                               <li>
+                                   <a href="#">Home</a>
+                               </li>
+                               <li>
+                                   <a href="#">about Us</a>
+                               </li>
+                               <li>
+                                   <a href="#">Contact Us</a>
+                               </li>
+                               <li>
+                                   <a href="#">Privacy Policy</a>
+                               </li>
+                               <li>
+                                   <a href="#">Faq</a>
+                               </li>
+                           </ul>
+                       </div> 
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="footer-menu">
+                       <p class="title">Categories</p>
+                       <div class="footer-link">
+                           <ul>
+                               <li>
+                                   <a href="#">Laptop</a>
+                               </li>
+                               <li>
+                                   <a href="#">Mobile</a>
+                               </li>
+                               <li>
+                                   <a href="#">Shoes</a>
+                               </li>
+                               <li>
+                                   <a href="#">Men's Wear</a>
+                               </li>                               
+                           </ul>
+                       </div> 
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="footer-menu">
+                       <p class="title">Get in Touch</p>
+                       <div class="footer-link">
+                           <ul>
+                               <li>
+                                   <a href="#"><i class="fa fa-phone"></i> +91 7874716190</a>
+                               </li>
+                               <li>
+                                   <a href="#"><i class="fa fa-phone"></i> +91 9979038583</a>
+                               </li>
+                               <li>
+                                   <a href="#"><i class="fa fa-whatsapp"></i> +91 9265928833</a>
+                               </li>
+                               <li>
+                                   <a href="#"><i class="fa fa-telegram"></i> +91 704378938583</a>
+                               </li>
+                                <li>
+                                   <a href="#"><i class="fa fa-skype"></i>  R&J solution</a>
+                               </li>
+                               <li>
+                                  <a href="#"><i class="far fa-envelope"></i> R&J5607@gmail.com</a>
+                              </li>
+                                                             
+                           </ul>
+                       </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="container-fluid footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <div class="copyright-section">
+                        <p> 
+                            All right reserved by <i class="fa fa-copyright"></i> company name. Designed and developed by <a href="#">RJ Websolution</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="payment-accepted text-right">
+                        <img src="Images/payment.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="id01" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                  <form class="modal-content animate" action="#" onsubmit="return validate()"  method="post" name="myform">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img src="Images/R&J.jpg" alt="Avatar" class="avatar">
+                    </div>
+                
+                    <div class="container">
+                      <label for="uname"><b>Username</b></label>
+                      <input type="text" placeholder="Enter Username" name="uname" required id="uname">
+                
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required id="psd">
+                        
+                      <button type="submit" id="sub">Login</button>
+                    </div>
+                
+                    <div class="container" style="background-color:#f1f1f1">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                      <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                  </form>
+                </div>
+       </div>
+
+  <script type="application/javascript" src="js/login.js"></script>
+  <script>
+    $(document).ready(function(){
+    $('.filter-btn a').click(function() {
+      $('.filter-section').toggle("slide");
+    });
+});
+var modal = document.getElementById('id01'); 
+
+      window.onclick = function(event) {
+       if (event.target == modal) {
+          modal.style.display = "none";
+        }
+    }
+    var modal = document.getElementById('id02'); 
+
+     window.onclick = function(event) {
+        if (event.target == modal) {
+          model.style.display = "none";
+        }
+    }
+ 
+  </script>
+  </body>
+  
+</html>

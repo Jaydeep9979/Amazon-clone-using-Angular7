@@ -1,0 +1,230 @@
+<div *ngFor="let obj of Info">
+<div class="container-fluid breadcums-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="filter-btn">
+                       <a href="#" style="font-variant:small-caps">{{obj.ChildCategory}} {{obj.ProductName}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid product_description">
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-sm-6 col-xs-12">
+<img class="outline" src="{{obj.imgPath}}" height="400px" width="400px" style="padding: 20px;margin: 10px 100px" data-aos="zoom-in"/>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12">
+<p class="product-name">{{obj.ChildCategory}} {{obj.ProductName}}</p>
+<div class="price-section">
+  <span class="price" style="text-decoration:line-through;color:#ff0000;font-size: 20px"><i class="fa fa-rupee"></i>{{obj.ProductOriPrice}}</span>
+  <span class="price original-price"
+  style="font-size: 25px"><i class="fa fa-rupee"></i>{{obj.ProductActPrice}}</span>
+</div>
+<div class="product-filter">
+  <label><b>QTY:</b></label>
+  <form id='myform' method='POST' action='#'>
+      <a value='-' class='qtyminus' field='quantity' href="#"><b>-</b></a>
+      <input type='text' name='quantity' value='1' class='qty' />
+      <a value='+' class='qtyplus' field='quantity' href="#"><b>+</b></a>
+  </form>
+</div>  
+<div class="payment-available">
+  <label><b>Payment Availability:</b></label>
+  <ul>
+      <li>
+          <i class="fa fa-close"></i> COD
+      </li>
+      <li>
+          <i class="fa fa-check available"></i> VISA
+      </li>
+      <li>
+          <i class="fa fa-check available"></i>EMI
+      </li>
+  </ul>
+</div>
+<div class="btn-section1">
+  <ul>
+      <li><a id=a1 routerLink="/cart_list">Add To Cart</a></li>
+      <li><a id=a1 href="#">Wishlist</a></li>
+      <li><a id=a2 href="#">Buy Now</a></li>
+  </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div *ngFor="let f of obj.productFeature">
+<div class="product-details container-fluid bd grey">
+<div class="container">
+<div class="row">
+   <div class="col-sm-6 col-md-6 col-xs-12">
+        <p class="heading">Description</p>
+        <div *ngIf="obj.SubCategory=='Mobile'">
+        <div class="table-responsive">
+        <table class="table table-condensed">
+            <thead>
+            <tr>
+                <th><h4 style="font-family: 'Times New Roman', Times, serif">Product-feature</h4></th>
+                <th><h4>Product-description</h4></th>
+            </tr>
+            </thead>
+          <tbody>
+            <tr>
+                <td style="background: lightgrey;font-style: italic">Display</td>
+                <td>{{f.Display}}</td>
+            </tr>
+            <tr>
+                    <td style="background: lightgrey;font-style: italic">Capacity</td>
+                    <td>{{f.Capacity}}</td>
+            </tr>
+            <tr>
+                    <td style="background: lightgrey;font-style: italic">Camera & Video</td>
+                    <td>{{f.Camera_Video}}</td>
+            </tr>
+            <tr>
+                    <td style="background: lightgrey;font-style: italic">Power and Battery</td>
+                    <td>{{f.Power_and_Battery}}</td>
+            </tr>
+            <tr>
+                    <td style="background: lightgrey;font-style: italic">In the box</td>
+                    <td>{{f.In_the_box}}</td>
+            </tr>
+            <tr>
+                    <td style="background: lightgrey;font-style: italic">Height</td>
+                    <td>{{f.Height}}</td>
+            </tr>
+            <tr>
+                    <td style="background: lightgrey;font-style: italic">Width</td>
+                    <td>{{f.Width}}</td>
+            </tr>
+            <tr>
+                    <td style="background: lightgrey;font-style: italic">Weight</td>
+                    <td>{{f.Weight}}</td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+        </div>
+        <div *ngIf="obj.SubCategory=='Laptops'">
+            <div class="table-responsive">
+            <table class="table table-condensed">
+                <thead>
+                <tr>
+                    <th><h4 style="font-family: 'Times New Roman', Times, serif">Product-feature</h4></th>
+                    <th><h4>Product-description</h4></th>
+                </tr>
+                </thead>
+              <tbody>
+                <tr>
+                    <td style="background: lightgrey;font-style: italic">Processor</td>
+                    <td>{{f.Processor}}</td>
+                </tr>
+                <tr>
+                        <td style="background: lightgrey;font-style: italic">Memory & Storage</td>
+                        <td>{{f.Memory_Storage}}</td>
+                </tr>
+                <tr>
+                        <td style="background: lightgrey;font-style: italic">Graphics</td>
+                        <td>{{f.Graphics}}</td>
+                </tr>
+                <tr>
+                        <td style="background: lightgrey;font-style: italic">Display</td>
+                        <td>{{f.Display}}</td>
+                </tr>
+                <tr>
+                        <td style="background: lightgrey;font-style: italic">Operating System</td>
+                        <td>{{f.OperatingSystem}}</td>
+                </tr>
+                <tr>
+                        <td style="background: lightgrey;font-style: italic">Design & Battery</td>
+                        <td>{{f.Design_Battery}}</td>
+                </tr>
+                <tr>
+                        <td style="background: lightgrey;font-style: italic">Keyboard</td>
+                        <td>{{f.Keyboard}}</td>
+                </tr>
+                <tr>
+                        <td style="background: lightgrey;font-style: italic">Other</td>
+                        <td>{{f.Other}}</td>
+                </tr>
+                <tr>
+                    <td style="background: lightgrey;font-style: italic">Warranty</td>
+                    <td>{{f.Warranty}}</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+            </div>
+    
+   </div>
+    <div class="col-xs-12 col-md-6 col-sm-6">
+        <div class="customer_Que">
+             <p class="que-head">Customer Questions</p>
+             <div class="faq-section">
+                    <ul>
+                    <div *ngFor="let q of Que">
+                        <div *ngIf="q.ProductName==obj.ProductName">
+                        <li>
+                            <div class="question">{{q.Question}}</div>
+                            <div class="answer">{{q.Answer}}</div>
+                        </li>
+                        </div>
+                    </div>
+                    </ul>
+            </div>
+        </div>
+     </div>
+</div>
+<p class="review-head"><b>Top Reviews</b></p>
+<div *ngFor="let rew of Review">
+<div *ngIf="rew.ChildCategory==obj.ChildCategory">
+<div *ngIf="rew.ProductName==obj.ProductName">
+<div class="row">
+   <div class="col-sm-12 col-md-12 col-xs-12">
+       <div class="review">
+       <i class='fas fa-user-circle' style='font-size:36px'></i>
+       <span style="font-size:20px"><b>{{rew.Name}}</b></span>
+       <span class="date">&nbsp;{{rew.Date | date}}</span>
+       <p class="info-review" style="font-family: Georgia, 'Times New Roman', Times, serif">{{rew.Review}}</p>
+       </div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<form #reviewform="ngForm" (ngSubmit)=ins_review(reviewform.value)>
+        <div class="form-group col-sm-12 col-md-12 col-xs-12">
+                <input type="hidden" [(ngModel)]="obj.Category" class="form-control-plaintext" name="Category" [value]="obj.Category">
+        </div>
+        <div class="form-group col-sm-12 col-md-12 col-xs-12">
+                <input type="hidden" [(ngModel)]="obj.SubCategory" class="form-control-plaintext" name="S_Category" value="{{obj.SubCategory}}">
+        </div>
+        <div class="form-group col-sm-12 col-md-12 col-xs-12">
+                <input type="hidden" [(ngModel)]="obj.ChildCategory" class="form-control-plaintext" name="C_Category" value="{{obj.ChildCategory}}">
+        </div>
+        <div class="form-group col-sm-12 col-md-12 col-xs-12">
+                <input type="hidden"  [(ngModel)]="obj.ProductName" class="form-control-plaintext" name="p_name" value="{{obj.ProductName}}">
+        </div>
+        <div class="form-group col-sm-12 col-md-12 col-xs-12">
+                <input type="hidden" [(ngModel)]="cdate" class="form-control-plaintext" name="date" value="{{cdate|date}}">
+        </div>
+        <div class="form-group col-sm-12 col-md-12 col-xs-12">
+            <h3><label for="product">Give Your Review About {{obj.ChildCategory}} {{obj.ProductName}}</label></h3>
+       </div>
+        <div class="form-group col-sm-12 col-md-12 col-xs-12">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" ngModel aria-describedby="ReviewHelp" placeholder="Enter Your Name" name="uname">
+          <small id="ReviewHelp" class="form-text text-muted">We'll never share your Review with anyone else.</small>
+        </div>
+        <div class="form-group col-sm-12 col-md-12 col-xs-12">
+          <label for="Review">Review</label>
+          <textarea class="form-control" id="review" ngModel placeholder="Review" name="review"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary col-sm-12 col-md-12 col-xs-12">Submit</button>
+</form>
+</div>
+</div>

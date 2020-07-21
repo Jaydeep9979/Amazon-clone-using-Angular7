@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>Online Shopping</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600i,700,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <link type="text/css" rel="stylesheet" href="css/home.css"/>
+        <link type="text/css" rel="stylesheet" href="css/slider.css"/>
+        
+        
+ </head>
+  <body>
+     <header>
+        <!-- <div class="header-top">
+            <div class="container-fluid">
+                 <div class="row">
+                     <div class="col-xl-12">
+                         <div class="logo">
+                         <a href="homepage.html">
+                             <img src="Images/R&J.jpg"></a>
+                             <!--<img src="Images/logo2.jpg">
+                         </div>
+                         <div class="wrap">
+                            <div class="search">
+                               <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                               <button type="submit" class="searchButton">
+                                 <img src="Images/search.png">
+                              </button>
+                            </div>
+                         </div>
+                         <div class="profile-detail">
+                                <ul>
+                                        <li><a href="#" onclick="check()" id="login">Login</a></li>
+                                        <li><a href="#" onclick="document.getElementById('id02').style.display='block'" id="signin">Sign Up</a></li>
+                                        <li><a href="Product-details.html">Today's deals</a></li>
+                                        <li><a href="cart.html" style="display: none" id="cart">My Cart</a></li>
+                                </ul>
+                         </div>   
+                     </div>
+                 </div>
+            </div>
+         </div>-->
+         <div data-aos="fade-down"
+         data-aos-duration="500"
+         data-aos-easing="ease-in-out"> 
+ <nav class="navbar navbar-expand-lg navbar-dark" id="nav1">
+   
+     <div class="logo" style:"position:fixed-top">
+                         <a class="navbar-brand "href="homepage.html">
+                         <img src="Images/R&J.jpg"></a>
+     </div>
+     <div class="wrap" style:"position:fixed-top">
+        <div class="search">
+           <input type="text" class="searchTerm" placeholder="What are you looking for?">
+           <button type="submit" class="searchButton">
+             <img src="Images/search.png">
+          </button>
+        </div>
+     </div>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav mr-auto">
+       <li class="nav-item"><a class href="#" onclick="check()" id="login">Login</a></li>
+       <li class="nav-item"><a href="#" onclick="document.getElementById('id02').style.display='block'" id="signin">Sign Up</a></li>
+       <li class="nav-item"><a href="Product-details.html">Today's deals</a></li>
+       <li class="nav-item"><a href="cart.html" style="display: none" id="cart">My Cart</a></li>
+       </div>
+     </ul>
+  </div>
+ </nav>
+</div>     
+     </header>
+     <nav class="navbar navbar-expand-sm" id="nav2" data-aos="fade-right"
+                                                    data-aos-duration="500"
+                                                    data-aos-delay="200"
+                                                    >
+       <ul class="navbar-nav"> 
+
+          <a class="navbar-brand" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif"><b>Categories</b></a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Mobile And Accessories
+            </a>
+            <div class="dropdown-menu">
+                <div class="row">
+                  <div class="col-xs-12">
+                     <a  class="dropdown-item" href="#"><b>Mobile & Accessories</b></a>
+                     <a class="dropdown-item" href="#">Cases & Covers</a>
+                     <a class="dropdown-item" href="#">PowerBanks</a>
+                     <a class="dropdown-item" href="#">Data Cabels</a>
+                  </div>
+                  <div class="col-xs-12">
+                       <a class="dropdown-item" href="#"><b>Mobile Brands</b></a>
+                       <a class="dropdown-item" href="#">Samsung</a>
+                       <a class="dropdown-item" href="#">Apple</a>
+                       <a class="dropdown-item" href="#">OnePlus</a>
+                       <a class="dropdown-item" href="#">Nokia</a>
+                       <a class="dropdown-item" href="#">MI</a>
+                  </div>
+                  <div class="col-xs-12">
+                      <a class="dropdown-item" href="#"><b>Accessories Brands</b></a>
+                      <a class="dropdown-item" href="#">Apple</a>
+                      <a class="dropdown-item" href="#">Intex</a>
+                      <a class="dropdown-item" href="#">Mivi</a>
+                      <a class="dropdown-item" href="#">boat</a>
+                 </div>   
+                </div>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Laptop And Accessories
+              </a>
+              <div class="dropdown-menu">
+                  <div class="row">
+                    <div class="col-xs-12">
+                       <a  class="dropdown-item" href="#"><b>Laptop</b></a>
+                       <a class="dropdown-item" href="#">Thin and Light Laptop</a>
+                       <a class="dropdown-item" href="#">2 in 1 laptop</a>
+                       <a class="dropdown-item" href="#">Gaming Laptop</a>
+                    </div>
+                    <div class="col-xs-12">
+                         <a class="dropdown-item" href="#"><b>Shop By Brand</b></a>
+                         <a class="dropdown-item" href="#">Apple</a>
+                         <a class="dropdown-item" href="#">MSI</a>
+                         <a class="dropdown-item" href="#">Hp</a>
+                         <a class="dropdown-item" href="#">Dell</a>
+                         <a class="dropdown-item" href="#">Lenovo</a>
+                    </div>
+                    <div class="col-xs-12">
+                        <a class="dropdown-item" href="#"><b>Pc Accessories</b></a>
+                        <a class="dropdown-item" href="#">Keyboard</a>
+                        <a class="dropdown-item" href="#">Mouse</a>
+                        <a class="dropdown-item" href="#">Laptop Bags</a>
+                        <a class="dropdown-item" href="#">PC speakers</a>
+                   </div>   
+                   <div class="col-xs-12">
+                      <a class="dropdown-item" href="#"><b>Data Storage</b></a>
+                      <a class="dropdown-item" href="#">Memory Cards</a>
+                      <a class="dropdown-item" href="#">Hard Disk</a>
+                   </div>   
+                  </div>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Men
+                </a>
+                <div class="dropdown-menu">
+                    <div class="row">
+                      <div class="col-xs-12">
+                         <a  class="dropdown-item" href="#"><b>Clothings</b></a>
+                         <a class="dropdown-item" href="#">T-shirts</a>
+                         <a class="dropdown-item" href="#">Jeans</a>
+                         <a class="dropdown-item" href="#">Sportswear</a>
+                         <a class="dropdown-item" href="#">Suits and blazzer</a>
+                      </div>
+                      <div class="col-xs-12">
+                           <a class="dropdown-item" href="#"><b>Shoes</b></a>
+                           <a class="dropdown-item" href="#">Sports Shoes</a>
+                           <a class="dropdown-item" href="#">Causal Shoes</a>
+                           <a class="dropdown-item" href="#">Formal Shoes</a>
+                           <a class="dropdown-item" href="#">Sneakers Shoes</a>
+                      </div>
+                      <div class="col-xs-12">
+                          <a class="dropdown-item" href="#"><b>Watches</b></a>
+                          <a class="dropdown-item" href="#">Metalic</a>
+                          <a class="dropdown-item" href="#">Chronograph</a>
+                          <a class="dropdown-item" href="#">Leather</a> 
+                     </div>   
+                    </div>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">  
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Office And Stationary
+                  </a>
+                  <div class="dropdown-menu">
+                      <div class="row">
+                        <div class="col-xs-12">
+                           <a  class="dropdown-item" href="#"><b>Office Products</b></a>
+                           <a class="dropdown-item" href="#">Pens and refills</a>
+                           <a class="dropdown-item" href="#">Pencil</a>
+                           <a class="dropdown-item" href="#">Premium Pens</a>
+                           <a class="dropdown-item" href="#">Highlighter</a>
+                        </div>
+                        <div class="col-xs-12">
+                             <a class="dropdown-item" href="#"><b>Calculator</b></a>
+                        </div>
+                        <div class="col-xs-12">
+                            <a class="dropdown-item" href="#"><b>Notebook And Diaries</b></a>
+                            <a class="dropdown-item" href="#">Notebooks</a>
+                            <a class="dropdown-item" href="#">Papers</a>
+                            <a class="dropdown-item" href="#">Drawing Pads</a> 
+                       </div>   
+                       <div class="col-xs-12">
+                          <a class="dropdown-item" href="#"><b>Art And Crafts</b></a>
+                          <a class="dropdown-item" href="#">Art Makers</a>
+                          <a class="dropdown-item" href="#">Crayons</a>
+                          <a class="dropdown-item" href="#">Coloring pens</a>
+                          <a class="dropdown-item" href="#">Art Glue</a> 
+                     </div>   
+                      </div>
+                  </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        TV and Home Entertainment
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="row">
+                          <div class="col-md-12">
+                             <a  class="dropdown-item" href="#"><b>Televisions</b></a>
+                             <a class="dropdown-item" href="#">Small TVs</a>
+                             <a class="dropdown-item" href="#">32 inch TVs</a>
+                             <a class="dropdown-item" href="#">4K TVs</a>
+                             <a class="dropdown-item" href="#">HD Ready TVs</a>
+                             <a class="dropdown-item" href="#">Android Based TVs</a>
+                          </div>
+                          <div class="col-md-12">
+                               <a class="dropdown-item" href="#"><b>Other Home Entertainment</b></a>
+                               <a class="dropdown-item" href="#">Home Theater</a>
+                               <a class="dropdown-item" href="#">Projectors and Accessories</a>
+                               <a class="dropdown-item" href="#">DVD & Blue ray player</a>
+                               <a class="dropdown-item" href="#">Cables</a>
+                          </div>   
+                        </div>
+                    </div>
+                  </li>
+      
+       </ul>
+     </nav>
+
+     <p id="p1"><h3></h3></p>
+    <div class="container-fluid" data-aos="fade-left" data-aos-duration="700">
+     <div class="slideshow-container" style="margin-top:10px;">
+      
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="Images/OnePlus_7_Pro_5.jpg" style="width:100%">
+          <div class="text">OnePlus 7 Pro</div>
+        </div>
+        
+     <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="Images/Macbook.jpg" style="width:100%">
+          <div class="text">Macbook 2018</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="Images/Boat_earphone.jpg" style="width:100%">
+          <div class="text">Boat Wirless Earphone</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+
+       <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+     </div>
+    </div>
+    
+    <div class="card" data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                      >
+       <div class="card-body">
+          <h3 class="card-title">Today's Deals</h3>
+          <div class="container">
+             <div class="row">
+                <div class="col-sm-4 col-md-3 col-xs-12">
+                    <div class="box" >
+            <div class="product-item" data-aos="zoom-in"
+                                      data-aos-duration="500">
+                 <a href="Product-info.html"><img src="Images/oneplus.jpeg" class="img-responsive" height="200px" width="200px" /></a>
+              <div class="overlay">
+                 <div class="product-content">
+                   <a class="product-name" href="product-info.html">OnePlus 7 Pro</a>
+                    <div class="price-section text-center">
+                      <span class="price" style="text-decoration:line-through;color:#ff0000"><i class="fa fa-rupee"></i>40000</span>
+                      <span class="price original-price"><i class="fa fa-rupee"></i>32000</span>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+                </div>
+                 <div class="col-sm-4 col-md-3 col-xs-12">
+                    <div class="box">
+            <div class="product-item" data-aos="zoom-in"
+                                      data-aos-duration="500">
+                 <a href="Product-info.html"><img src="Images/1.jpeg" class="img-responsive" height="200px" width="220px" /></a>
+              <div class="overlay">
+                 <div class="product-content">
+                   <a class="product-name" href="product-info.html">Dell Laptop</a>
+                    <div class="price-section text-center">
+                      <span class="price" style="text-decoration:line-through;color:#ff0000"><i class="fa fa-rupee"></i>70000</span>
+                      <span class="price original-price"><i class="fa fa-rupee"></i>50000</span>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+                </div>
+               <div class="col-sm-4 col-md-3 col-xs-12">
+                    <div class="box">
+            <div class="product-item" data-aos="zoom-in"
+                                      data-aos-duration="500">
+                 <a href="Product-info.html"><img src="Images/2.jpeg" class="img-responsive" height="200px" width="200px" /></a>
+              <div class="overlay">
+                 <div class="product-content">
+                   <a class="product-name" href="product-info.html">Men's shirt</a>
+                    <div class="price-section text-center">
+                      <span class="price" style="text-decoration:line-through;color:#ff0000"><i class="fa fa-rupee"></i>1200</span>
+                      <span class="price original-price"><i class="fa fa-rupee"></i>700</span>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-12">
+                    <div class="box">
+            <div class="product-item" data-aos="zoom-in"
+                                      data-aos-duration="500">
+                 <a href="Product-info.html"><img src="Images/3.jpg" class="img-responsive" height="200px" width="200px" /></a>
+              <div class="overlay">
+                 <div class="product-content">
+                   <a class="product-name" href="product-info.html">Shoes</a>
+                    <div class="price-section text-center">
+                      <span class="price" style="text-decoration:line-through;color:#ff0000"><i class="fa fa-rupee"></i>2000</span>
+                      <span class="price original-price"><i class="fa fa-rupee"></i>1499</span>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+                </div>
+             </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+               <div class="col-sm-4 col-md-3 col-xs-12">
+                   <div class="box">
+           <div class="product-item" data-aos="zoom-in"
+                                     data-aos-duration="500">
+                <a href="Product-info.html"><img src="Images/macbookpro.jpg" class="img-responsive" height="200px" width="200px" /></a>
+             <div class="overlay">
+                <div class="product-content">
+                  <a class="product-name" href="product-info.html">Macbook Pro 2017</a>
+                   <div class="price-section text-center">
+                     <span class="price" style="text-decoration:line-through;color:#ff0000"><i class="fa fa-rupee"></i>110000</span>
+                     <span class="price original-price"><i class="fa fa-rupee"></i>85000</span>
+                   </div>
+                 </div>
+             </div>
+           </div>
+         </div>
+               </div>
+                <div class="col-sm-4 col-md-3 col-xs-12">
+                   <div class="box">
+           <div class="product-item" data-aos="zoom-in"
+                                     data-aos-duration="500">
+                <a href="Product-info.html"><img src="Images/earphone.jpg" class="img-responsive" height="200px" width="220px" /></a>
+             <div class="overlay">
+                <div class="product-content">
+                  <a class="product-name" href="product-info.html">MI wireless earphone</a>
+                   <div class="price-section text-center">
+                     <span class="price" style="text-decoration:line-through;color:#ff0000"><i class="fa fa-rupee"></i>2000</span>
+                     <span class="price original-price"><i class="fa fa-rupee"></i>1000</span>
+                   </div>
+                 </div>
+             </div>
+           </div>
+         </div>
+               </div>
+              <div class="col-sm-4 col-md-3 col-xs-12">
+                   <div class="box">
+           <div class="product-item" data-aos="zoom-in"
+                                     data-aos-duration="500">
+                <a href="Product-info.html"><img src="Images/ledtv.jpeg" class="img-responsive" height="200px" width="200px" /></a>
+             <div class="overlay">
+                <div class="product-content">
+                  <a class="product-name" href="product-info.html">Samsung LED TV</a>
+                   <div class="price-section text-center">
+                     <span class="price" style="text-decoration:line-through;color:#ff0000"><i class="fa fa-rupee"></i>12000</span>
+                     <span class="price original-price"><i class="fa fa-rupee"></i>95000</span>
+                   </div>
+                 </div>
+             </div>
+           </div>
+         </div>
+               </div>
+               <div class="col-sm-4 col-md-3 col-xs-12">
+                   <div class="box">
+           <div class="product-item" data-aos="zoom-in"
+                                     data-aos-duration="500">
+                <a href="Product-info.html"><img src="Images/perfume.jpg" class="img-responsive" height="200px" width="200px" /></a>
+             <div class="overlay">
+                <div class="product-content">
+                  <a class="product-name" href="product-info.html">KS Perfume</a>
+                   <div class="price-section text-center">
+                     <span class="price" style="text-decoration:line-through;color:#ff0000"><i class="fa fa-rupee"></i>290</span>
+                     <span class="price original-price"><i class="fa fa-rupee"></i>169</span>
+                   </div>
+                 </div>
+             </div>
+           </div>
+         </div>
+               </div>
+            </div>
+         </div>
+       </div>
+    </div>
+    
+    
+    <div class="social-media-section" data-aos="zoom-in" data-aos-duration="700">
+        <ul class="social-wrap">
+            <li><a href="#" class="fb"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" class="insta"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" class="google"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#" class="skype"><i class="fa  fa-skype"></i></a></li>
+            <li><a href="#" class="youtube"><i class="fa fa-youtube-play"></i></a></li>
+            <li><a href="#" class="linkedin"><i class="fa fa-linkedin "></i></a></li>
+            <li><a href="#" class="pinterest"><i class="fa fa-pinterest-p"></i></a></li>
+        </ul>
+    </div>
+    <footer data-aos="zoom-out" data-aos-duration="600">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                     <div class="footer-menu">
+                        <div class="logo">
+                            <img src="Images/R&J.jpg" class="img-responsive">
+                        </div>
+                        <p>R&J provide all kind of product at best price and also provides other
+                             services.
+                        </p>
+                        <div class="social-media">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                     </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="footer-menu">
+                       <p class="title">Navigation Link</p>
+                       <div class="footer-link">
+                           <ul>
+                               <li>
+                                   <a href="#">Home</a>
+                               </li>
+                               <li>
+                                   <a href="#">about Us</a>
+                               </li>
+                               <li>
+                                   <a href="#">Contact Us</a>
+                               </li>
+                               <li>
+                                   <a href="#">Privacy Policy</a>
+                               </li>
+                               <li>
+                                   <a href="#">Faq</a>
+                               </li>
+                           </ul>
+                       </div> 
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="footer-menu">
+                       <p class="title">Categories</p>
+                       <div class="footer-link">
+                           <ul>
+                               <li>
+                                   <a href="#">Laptop</a>
+                               </li>
+                               <li>
+                                   <a href="#">Mobile</a>
+                               </li>
+                               <li>
+                                   <a href="#">Shoes</a>
+                               </li>
+                               <li>
+                                   <a href="#">Men's Wear</a>
+                               </li>                               
+                           </ul>
+                       </div> 
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="footer-menu">
+                       <p class="title">Get in Touch</p>
+                       <div class="footer-link">
+                           <ul>
+                               <li>
+                                   <a href="#"><i class="fa fa-phone"></i> +91 7874716190</a>
+                               </li>
+                               <li>
+                                   <a href="#"><i class="fa fa-phone"></i> +91 9979038583</a>
+                               </li>
+                               <li>
+                                   <a href="#"><i class="fa fa-whatsapp"></i> +91 9265928833</a>
+                               </li>
+                               <li>
+                                   <a href="#"><i class="fa fa-telegram"></i> +91 704378938583</a>
+                               </li>
+                                <li>
+                                   <a href="#"><i class="fa fa-skype"></i>  R&J solution</a>
+                               </li>
+                               <li>
+                                  <a href="#"><i class="far fa-envelope"></i> R&J5607@gmail.com</a>
+                              </li>
+                                                             
+                           </ul>
+                       </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="container-fluid footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <div class="copyright-section">
+                        <p> 
+                            All right reserved by <i class="fa fa-copyright"></i> company name. Designed and developed by <a href="#">RJ Websolution</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="payment-accepted text-right">
+                        <img src="Images/payment.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="id01" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <form class="modal-content animate" action="#" onsubmit="return validate()"  method="post" name="myform">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="Images/R&J.jpg" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required id="uname">
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required id="psd">
+              
+            <button type="submit">Login</button>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+      </div>
+
+      <div id="id02" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <form class="modal-content animate" action="#">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="Images/R&J.jpg" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+
+            <label for="First Name"><b>First Name</b></label>
+            <input type="text" placeholder="FirstName" name="fname" required>
+
+            <label for="Last Name"><b>Username</b></label>
+            <input type="text" placeholder="LastName" name="lname" required>
+      
+            <label for="psw1"><b>Password</b></label>
+            <input type="password" placeholder="Password" name="psw1" required>
+
+            <label for="psw2"><b>Re-Password</b></label>
+            <input type="password" placeholder="Re-Enter Password" name="psw2" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Email Address" name="email" required>
+
+            <label for="phone_no"><b>Phone Number</b></label>
+            <input type="text" placeholder="Phone Number" name="phone_no" required>
+              
+            <button type="submit">Register</button> 
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+          </div>
+        </form>
+       </div>
+      </div>
+
+      <script type="application/javascript" src="js/login.js"></script>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
+
+    <script>
+            var slideIndex = 1;
+       showSlides(slideIndex);
+       
+       function plusSlides(n) {
+         showSlides(slideIndex += n);
+       }
+       
+       function currentSlide(n) {
+         showSlides(slideIndex = n);
+       }
+       
+       function showSlides(n) {
+         var i;
+         var slides = document.getElementsByClassName("mySlides");
+         var dots = document.getElementsByClassName("dot");
+         if (n > slides.length) {slideIndex = 1}    
+         if (n < 1) {slideIndex = slides.length}
+         for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+         }
+         for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" active", "");
+         }
+         slides[slideIndex-1].style.display = "block";  
+         dots[slideIndex-1].className += " active";
+       }
+
+       var modal = document.getElementById('id01'); 
+
+      window.onclick = function(event) {
+       if (event.target == modal) {
+          modal.style.display = "none";
+        }
+    }
+    var modal = document.getElementById('id02'); 
+
+     window.onclick = function(event) {
+        if (event.target == modal) {
+          model.style.display = "none";
+        }
+    }
+       </script> 
+
+  </body>
+</html>

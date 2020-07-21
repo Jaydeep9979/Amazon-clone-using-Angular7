@@ -1,0 +1,31 @@
+<div  style="height:100vh;background-color: rgb(35,47,62);">
+<div class="container-fluid" data-aos="zoom-in-down"  data-aos-duration="1500">
+    <div class="row" >
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5" style="color: rgb(243,168,71);">
+          <div class="card-body" >
+            <h5 class="card-title text-center" >Admin login</h5>
+            <form #loginform="ngForm" (ngSubmit)=login(loginform.value) class="form-signin" >
+              <div class="form-label-group">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address " name="email" required autofocus ngModel>
+                <label for="inputEmail">Email address</label>
+              </div>
+              <div class="form-label-group">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required ngModel>
+                <label for="inputPassword">Password</label>
+              </div>
+
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1" ngModel>
+                <label class="custom-control-label" for="customCheck1">Remember password</label>
+                <a class="" for="customCheck1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Forgot password ?</a>
+              </div>
+              <button class="btn btn-lg btn-warning btn-block text-uppercase" type="submit">Sign in</button>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

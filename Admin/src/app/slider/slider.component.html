@@ -1,0 +1,75 @@
+<app-header></app-header>
+<div class="container-fluid" data-aos="zoom-in-down"  data-aos-duration="1500" >
+    <div class="col-md-12">
+     <div class="card-header " style="margin-top:100px" >
+        <div class="panel panel-primary">
+         <div class="panel-heading">
+           <h3>Add Slider Details</h3>
+         </div>
+        </div>
+     </div>
+     <form role="form" (submit)="RequestDataEntry1($event)">
+       
+       <div class="card-body">
+         <div class="form-group">
+           <label for="slider">Slider</label>
+           <input type="text" class="form-control" id="slider" placeholder="Enter Slider Name ..." name="slider">
+         </div>
+         
+         <div class="form-group">
+           <label for="email">Description</label>
+           <input type="text" class="form-control" id="desc" placeholder="Enter Slider Description ..." name="desc">
+         </div>
+
+         
+         <div class="form-group">
+           <label for="exampleInputFile">Slider Image</label>
+           <div class="input-group">
+             <div class="custom-file mb-3">
+               <input type="file" class="custom-file-input" id="img" (change)="handleFileInput($event.target.files)" >
+               <label class="custom-file-label" for="exampleInputFile" >Choose Image Files</label>
+             </div>
+           </div>
+         </div>
+         
+         <button type="submit" class="btn btn-success">Submit</button>
+       </div>
+     </form>
+     
+   </div>
+</div>
+   
+   
+   <div class="container-fluid" data-aos="zoom-in-down"  data-aos-duration="1500" >
+     <h2>Available Sliders</h2>
+      <div class="md-form mt-0">
+       <input id="myInput" class="form-control" type="text" placeholder="Search..">
+       </div>
+     <table class="table table-hover table-bordered">
+       <thead class="thead-dark">
+         <tr>
+        
+           <th>Slider Name</th>
+           <th>Slider Image</th>
+           <th>Actions</th>
+         </tr>
+       </thead>
+       <tbody id="myTable">
+         <tr *ngFor="let sld of Sliderdata,index as id ">
+           
+           <td>{{sld.slider}}</td>
+           <td><img src="{{sld.img}}" height="30px" width="50px"></td>
+   
+           <td><a href="#" class="btn btn-primary"><i class="fa fa-edit fa-lg" ></i> Edit</a>&nbsp;&nbsp;&nbsp;&nbsp;
+             <a class="btn btn-danger" (click)=delslider(id) ><i class="fa fa-trash-o fa-lg"></i> Delete</a>
+             &nbsp;&nbsp;&nbsp;&nbsp;
+           </td>
+         </tr>
+         
+        
+        
+       </tbody>
+     </table>
+    
+   </div>
+   

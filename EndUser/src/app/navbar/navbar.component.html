@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-sm" id="nav2">
+ <ul class="navbar-nav"> 
+    <a class="navbar-brand" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif"><b>Categories</b></a>
+    <div *ngFor="let category of Category">
+        <li class="nav-item dropdown"> 
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            {{category.category}} 
+                    <div class="dropdown-menu">
+                        <div *ngFor="let subcategory of SubCategory">
+                            <div class="row" *ngIf="category.category==subcategory.category">
+                                <div class="col-xs-12">
+                                    <button  class="dropdown-item" (click)="get_dataBySubCategory(subcategory.subcategory)"><b>{{subcategory.subcategory}}</b></button>
+                                        <div *ngFor="let childcategory of ChildCategory">
+                                            <div *ngIf="subcategory.subcategory==childcategory.subcategory">
+                                                <button class="dropdown-item" (click)="get_dataByChildCategory(subcategory.subcategory,childcategory.childcategory)">{{childcategory.childcategory}}</button>
+                                            </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </a>
+        </li>   
+    </div>
+ </ul>
+</nav>

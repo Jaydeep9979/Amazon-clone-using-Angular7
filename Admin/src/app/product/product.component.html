@@ -1,0 +1,104 @@
+
+<app-header></app-header>
+<div >
+<div class="container-fluid" data-aos="zoom-in-down"  data-aos-duration="1500">
+  <div class="col-md-12">
+   <div class="card-header">
+      <div class="panel panel-primary" id="hi">
+       <div class="panel-heading">
+         <h3>Add Products</h3>
+       </div>
+      </div>
+   </div>
+   <form role="form" (submit)="RequestDataEntry($event)"  >
+     <div class="card-body">
+       <div class="form-group">
+           <label for="cat">Select Category</label>
+           <select class="form-control" name="category" id="cat">
+             <option *ngFor="let cat of Repdata" value="{{cat.category}}">{{cat.category}}</option>
+             
+           </select>
+       </div>
+       <div class="form-group">
+         <label for="subcat">Select Sub-Category</label>
+         <select class="form-control" name="subcategory" id="subcat">
+           <option *ngFor="let subcat of Repdata1" value="{{subcat.subcategory}}">{{subcat.subcategory}}</option>
+           
+         </select>
+       </div>
+       <div class="form-group">
+        <label for="childcat">Select Child-Category</label>
+        <select class="form-control" name="childcategory"  id="childcat">
+            <option *ngFor="let childcat of Repdata2" value="{{childcat.childcategory}}">{{childcat.childcategory}}</option>
+            
+          </select>           
+        </div>
+        <div class="form-group">
+          <label for="email">Product Name</label>
+          <input type="text" class="form-control" id="product" placeholder="Enter Product Name ..." name="product_name">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Product Price</label>
+          <input type="text" class="form-control" id="price" placeholder="Enter Product Price ..." name="product_price" >
+        </div>
+        <div class="form-group">
+              <label for="Productdesc">Product Description</label>
+            <input type="Text" name="Product_desc" id="desc"class="form-control" placeholder="Type Product Des..." >
+        </div>
+        <div class="form-group">
+            <label for="exampleInputFile">Product  Image</label>
+            <div class="input-group">
+                <div class="custom-file mb-3">
+                  <input type="file" class="custom-file-input" id="img" (change)="handleFileInput($event.target.files)">
+                  <br><br>
+                  <label class="custom-file-label" for="exampleInputFile">Choose Banner Image</label>
+                </div>
+            </div>
+           
+          
+            
+          </div>
+       <button type="submit" class="btn btn-success">Submit</button>
+     </div>
+   </form>
+ </div>
+ </div>
+ 
+ 
+ <div class="container-fluid" style="padding-top: 40px;" data-aos="zoom-in-down"  data-aos-duration="1500">
+   <h2>Available Products</h2>
+   <div class="md-form mt-0">
+     <input id="myInput" class="form-control" type="text" placeholder="Search..">
+     </div>
+ 
+   <table class="table table-hover table-bordered" >
+     <thead class="thead-dark">
+       <tr >
+         <th>Category</th>
+         <th>Subcategory </th>
+         <th>Childcategory</th>
+         <th>Product</th>
+         <th>Price</th>
+         <th>Image</th>
+         <th>Actions</th>
+       </tr>
+     </thead>
+     <tbody id="myTable">
+       <tr *ngFor="let product of Productdata,index as id">
+         <td>{{product.category}}</td> 
+         <td>{{product.subcategory}}</td> 
+         <td>{{product.childcategory}}</td>
+         <td>{{product.product}}</td>
+         <td>{{product.price}}</td>
+         <td><img src="{{product.img}}" height="50px" width="100px"></td>
+ 
+         <td><a href="#" class="btn btn-primary"><i class="fa fa-edit fa-lg" ></i> Edit</a>&nbsp;&nbsp;&nbsp;&nbsp;
+           <a class="btn btn-danger" (click)=delprd(id)><i class="fa fa-trash-o fa-lg"></i> Delete</a>
+         </td>
+       </tr>
+       
+     </tbody>
+   </table>
+  
+ </div>
+ </div>

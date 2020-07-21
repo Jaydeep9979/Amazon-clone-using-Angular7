@@ -1,0 +1,120 @@
+.cart-detail{
+    padding: 50px 0;
+}
+
+.cart-detail a:hover
+{
+  text-decoration:none;
+}
+.cart-section{
+    padding-bottom:30px;
+}
+.cart-section table{
+    width: 100%;
+}
+.cart-section table thead th,.cart-section table tbody td{
+    padding: 10px;
+    vertical-align: top;
+}
+.cart-section table tr{
+    border-bottom: 1px solid #ddd;
+}
+.cart-section table thead th{
+    font-size: 28px;
+    color: #616161;
+    font-style: italic;
+}
+.cart-section table tbody td img{
+    max-height:100px;
+}
+
+.cart-section table tbody td a.product-name{
+    font-size: 18px;
+    color: #993333;
+    letter-spacing: 0.8px;
+    font-weight: 700;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+.cart-section table tbody td p label,.cart-section table tbody td p{
+    margin-bottom: 0;
+}
+.cart-section table tbody td p{
+   font-family: 'Roboto Slab', serif;
+}
+.cart-section table tbody td p.price{
+    font-size: 18px;
+    font-family: 'Roboto Slab', serif;
+}
+.cart-detail .sub-total{
+    background-color: #fffffc;
+    padding: 5px 10px;
+    color: #fff;
+    border: 2px solid #000000 ;
+    border-radius: 3px;
+}
+.cart-detail span{
+    float: right;
+    font-size: 24px;
+    letter-spacing: 0.8px;
+    color: #0000ff;
+    background-color: #ffffff;
+}
+
+.cart-detail .btn-primary{
+   background-color:#0000ff;
+   color: #ffffff;
+   padding: 10px;
+   border: 1px solid #000000;
+   border-radius: 3px;
+   height: 70px;
+   width: 80px;
+
+}
+.cart-detail .sub-total label{
+    font-size: 26px;
+    color: #ff0000;
+}
+.cart-section .remove-product i{
+    font-size: 30px;
+    color: #ff0000;
+}
+
+.product-filter form a.qtyplus{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ff003c;
+    border-radius: 0px 5px 5px 0px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    background-color: #ff003c;
+    color: #fff;
+}
+.product-filter form input{
+    height: 30px;
+    padding: 5px;
+    width: 100px;
+    border: 1px solid #ff003c;
+}
+
+.product-filter a:hover{
+  text-decoration: none;
+}
+
+.product-filter form{
+    display: inline-flex;
+    margin-left: 30px;
+ }
+ .product-filter form a.qtyminus{
+     width: 30px;
+     height: 30px;
+     border: 1px solid #ff003c;
+     border-radius: 5px 0px 0px 5px;
+     display: inline-block;
+     text-align: center;
+     line-height: 30px;
+     background-color: #ff003c;
+     color: #fff;
+ }
+ 

@@ -1,0 +1,107 @@
+<div class="container-fluid cart-detail">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="cart-section">
+                    <table class="table-striped">
+                        <thead>
+                            <tr>
+                                <th width="10%">Image</th>
+                                <th width="30%">Description</th>
+                                <th width="15%" class="text-right">Price</th>
+                                <th width="20%" class="text-right">Quantity</th>
+                                <th width="20%" class="text-right">Total Price</th>
+                                <th width="5%"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="/assets/image/iphone.jpg" class="img-responsive">
+                                </td>
+                                <td>
+                                    <a class="product-name" href="product-detail.html" style="font-variant: small-caps">Iphone X</a>
+                                    <p class="color">
+                                        <label>Color:</label>White
+                                    </p>
+                                </td>
+                                <td class="text-right">
+                                    <p class="price"><i class="fa fa-rupee"></i>85000</p>
+                                </td>
+                                <td class="product-filter text-right">
+                                    <form id='myform' method='POST' action='#' class="ml-0">
+                                        <a value='-' class='qtyminus' field='quantity' href="#">-</a>
+                                        <input type='text' name='quantity' value='0' class='qty' />
+                                        <a value='+' class='qtyplus' field='quantity' href="#">+</a>
+                                    </form>
+                                </td>
+                                <td class="text-right"><p class="price"><i class="fa fa-rupee"></i>85000</p></td>
+                                <td class="text-center"><a href="#" class="remove-product"><i class="fa fa-trash"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="assets/image/oneplus.jpeg" class="img-responsive">
+                                </td>
+                                <td>
+                                    <a class="product-name" href="product-detail.html" style="font-variant: small-caps">One Plus 6</a>
+                                    <p class="color">
+                                        <label>Color:</label>Thunder Purple
+                                    </p>
+                                </td>
+                                <td class="text-right">
+                                    <p class="price"><i class="fa fa-rupee"></i>32000</p>
+                                </td>
+                                <td class="product-filter text-right">
+                                    <form id='myform' method='POST' action='#' class="ml-0">
+                                        <a value='-' class='qtyminus' field='quantity1' href="#">-</a>
+                                        <input type='text' name='quantity1' value='0' class='qty' />
+                                        <a value='+' class='qtyplus' field='quantity1' href="#">+</a>
+                                    </form>
+                                </td>
+                                <td class="text-right"><p class="price"><i class="fa fa-rupee"></i>32000</p></td>
+                                <td class="text-center"><a href="#" class="remove-product"><i class="fa fa-trash"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="assets/image/samsung10.jpg" class="img-responsive">
+                                </td>
+                                <td>
+                                    <a class="product-name" href="product-detail.html" style="font-variant: small-caps">Samsung S10 plus</a>
+                                    <p class="color">
+                                        <label>Color:</label>metalic white
+                                    </p>
+                                </td>
+                                <td class="text-right">
+                                    <p class="price"><i class="fa fa-rupee"></i>55000</p>
+                                </td>
+                                <td class="product-filter text-right">
+                                    <form id='myform' method='POST' action='#' class="ml-0">
+                                        <a value='-' class='qtyminus' field='quantity2' href="#">-</a>
+                                        <input type='text' name='quantity2' value='1' class='qty' />
+                                        <a value='+' class='qtyplus' field='quantity2' href="#">+</a>
+                                    </form>
+                                </td>
+                                <td class="text-right"><p class="price"><i class="fa fa-rupee"></i>55000</p></td>
+                                <td class="text-center" ><a href="#" class="remove-product"><i class="fa fa-trash"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-md-8 col-sm-8 col-xs-12"> 
+                     <div class="Checkout">
+                          <a routerLink="/checkout" class="btn-primary">Check Out</a>
+                     </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12"> 
+                     <div class="sub-total">
+                        <label>Sub Total:</label>
+                        <span><i class="fa fa-rupee"></i>100000</span>
+                     </div>
+                </div>
+            </div> 
+    </div> 
+</div> 
+

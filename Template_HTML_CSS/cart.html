@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>My Cart</title>
+     <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600i,700,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet"> 
+
+        <link type="text/css" rel="stylesheet" href="css/home.css"/>
+        <link type="text/css" rel="stylesheet" href="css/slider.css"/>
+  </head>
+  <body>
+        <header>
+                <div class="header-top">
+                   <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="logo">
+                                <a href="homepage.html">
+                                    <img src="Images/R&J.jpg">
+                                
+                                </a>
+                                    <!--<img src="Images/logo2.jpg">-->
+                                </div>
+                                <div class="wrap">
+                                   <div class="search">
+                                      <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                                      <button type="submit" class="searchButton">
+                                        <!--<i class="fa fa-search"></i>-->
+                                        <img src="Images/search.png">
+                                     </button>
+                                   </div>
+                                </div>
+                                <div class="profile-detail">
+                                       <ul>
+                                               <li><a href="Product-details.html">Today's deals</a></li>
+                                               <li><a href="homepage.html">HOME</a></li>
+                                       </ul>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </header>
+            <div class="container-fluid breadcums-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <div class="filter-btn">
+                                       <a href="#" style="font-variant:small-caps"><i class="glyphicon glyphicon-shopping-cart"></i>
+                                        My Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>  
+            <div class="container-fluid cart-detail">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="cart-section">
+                                    <table class="table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th width="10%">Image</th>
+                                                <th width="30%">Description</th>
+                                                <th width="15%" class="text-right">Price</th>
+                                                <th width="20%" class="text-right">Quantity</th>
+                                                <th width="20%" class="text-right">Total Price</th>
+                                                <th width="5%"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/iphone.jpg" class="img-responsive">
+                                                </td>
+                                                <td>
+                                                    <a class="product-name" href="product-detail.html" style="font-variant: small-caps">Iphone X</a>
+                                                    <p class="color">
+                                                        <label>Color:</label>White
+                                                    </p>
+                                                </td>
+                                                <td class="text-right">
+                                                    <p class="price"><i class="fa fa-rupee"></i>85000</p>
+                                                </td>
+                                                <td class="product-filter text-right">
+                                                    <form id='myform' method='POST' action='#' class="ml-0">
+                                                        <a value='-' class='qtyminus' field='quantity' href="#">-</a>
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <a value='+' class='qtyplus' field='quantity' href="#">+</a>
+                                                    </form>
+                                                </td>
+                                                <td class="text-right"><p class="price"><i class="fa fa-rupee"></i>85000</p></td>
+                                                <td class="text-center"><a href="#" class="remove-product"><i class="fa fa-trash"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/oneplus.jpeg" class="img-responsive">
+                                                </td>
+                                                <td>
+                                                    <a class="product-name" href="product-detail.html" style="font-variant: small-caps">One Plus 6</a>
+                                                    <p class="color">
+                                                        <label>Color:</label>Thunder Purple
+                                                    </p>
+                                                </td>
+                                                <td class="text-right">
+                                                    <p class="price"><i class="fa fa-rupee"></i>32000</p>
+                                                </td>
+                                                <td class="product-filter text-right">
+                                                    <form id='myform' method='POST' action='#' class="ml-0">
+                                                        <a value='-' class='qtyminus' field='quantity1' href="#">-</a>
+                                                        <input type='text' name='quantity1' value='0' class='qty' />
+                                                        <a value='+' class='qtyplus' field='quantity1' href="#">+</a>
+                                                    </form>
+                                                </td>
+                                                <td class="text-right"><p class="price"><i class="fa fa-rupee"></i>32000</p></td>
+                                                <td class="text-center"><a href="#" class="remove-product"><i class="fa fa-trash"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/samsung10.jpg" class="img-responsive">
+                                                </td>
+                                                <td>
+                                                    <a class="product-name" href="product-detail.html" style="font-variant: small-caps">Samsung S10 plus</a>
+                                                    <p class="color">
+                                                        <label>Color:</label>metalic white
+                                                    </p>
+                                                </td>
+                                                <td class="text-right">
+                                                    <p class="price"><i class="fa fa-rupee"></i>55000</p>
+                                                </td>
+                                                <td class="product-filter text-right">
+                                                    <form id='myform' method='POST' action='#' class="ml-0">
+                                                        <a value='-' class='qtyminus' field='quantity2' href="#">-</a>
+                                                        <input type='text' name='quantity2' value='0' class='qty' />
+                                                        <a value='+' class='qtyplus' field='quantity2' href="#">+</a>
+                                                    </form>
+                                                </td>
+                                                <td class="text-right"><p class="price"><i class="fa fa-rupee"></i>55000</p></td>
+                                                <td class="text-center" ><a href="#" class="remove-product"><i class="fa fa-trash"></i></a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-md-8 col-sm-8 col-xs-12"> 
+                                     <div class="Checkout">
+                                          <a href="Checkout.html" class="btn-primary">Check Out</a>
+                                     </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-12"> 
+                                     <div class="sub-total">
+                                        <label>Sub Total:</label>
+                                        <span><i class="fa fa-rupee"></i>100000</span>
+                                     </div>
+                                </div>
+                            </div> 
+                    </div> 
+                </div> 
+                
+                <div class="social-media-section">
+        <ul class="social-wrap">
+            <li><a href="#" class="fb"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" class="insta"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" class="google"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#" class="skype"><i class="fa  fa-skype"></i></a></li>
+            <li><a href="#" class="youtube"><i class="fa fa-youtube-play"></i></a></li>
+            <li><a href="#" class="linkedin"><i class="fa fa-linkedin "></i></a></li>
+            <li><a href="#" class="pinterest"><i class="fa fa-pinterest-p"></i></a></li>
+        </ul>
+    </div>
+           <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                     <div class="footer-menu">
+                        <div class="logo">
+                            <img src="Images/R&J.jpg" class="img-responsive">
+                        </div>
+                        <p>R&J provide all kind of product at best price and also provides other
+                             services.
+                        </p>
+                        <div class="social-media">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                     </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="footer-menu">
+                       <p class="title">Navigation Link</p>
+                       <div class="footer-link">
+                           <ul>
+                               <li>
+                                   <a href="#">Home</a>
+                               </li>
+                               <li>
+                                   <a href="#">about Us</a>
+                               </li>
+                               <li>
+                                   <a href="#">Contact Us</a>
+                               </li>
+                               <li>
+                                   <a href="#">Privacy Policy</a>
+                               </li>
+                               <li>
+                                   <a href="#">Faq</a>
+                               </li>
+                           </ul>
+                       </div> 
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="footer-menu">
+                       <p class="title">Categories</p>
+                       <div class="footer-link">
+                           <ul>
+                               <li>
+                                   <a href="#">Laptop</a>
+                               </li>
+                               <li>
+                                   <a href="#">Mobile</a>
+                               </li>
+                               <li>
+                                   <a href="#">Shoes</a>
+                               </li>
+                               <li>
+                                   <a href="#">Men's Wear</a>
+                               </li>                               
+                           </ul>
+                       </div> 
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="footer-menu">
+                       <p class="title">Get in Touch</p>
+                       <div class="footer-link">
+                           <ul>
+                               <li>
+                                   <a href="#"><i class="fa fa-phone"></i> +91 7874716190</a>
+                               </li>
+                               <li>
+                                   <a href="#"><i class="fa fa-phone"></i> +91 9979038583</a>
+                               </li>
+                               <li>
+                                   <a href="#"><i class="fa fa-whatsapp"></i> +91 9265928833</a>
+                               </li>
+                               <li>
+                                   <a href="#"><i class="fa fa-telegram"></i> +91 704378938583</a>
+                               </li>
+                                <li>
+                                   <a href="#"><i class="fa fa-skype"></i>  R&J solution</a>
+                               </li>
+                               <li>
+                                  <a href="#"><i class="far fa-envelope"></i> R&J5607@gmail.com</a>
+                              </li>
+                                                             
+                           </ul>
+                       </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script>
+      jQuery(document).ready(function(){
+    $('.qtyplus').click(function(e){
+        e.preventDefault();
+        fieldName = $(this).attr('field');
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        if (!isNaN(currentVal)){
+            $('input[name='+fieldName+']').val(currentVal + 1);
+        } else {
+            $('input[name='+fieldName+']').val(0);
+        }
+    });
+    $(".qtyminus").click(function(e) {
+        e.preventDefault();
+        fieldName = $(this).attr('field');
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        if (!isNaN(currentVal) && currentVal > 0) {
+            $('input[name='+fieldName+']').val(currentVal - 1);
+        } else {
+            $('input[name='+fieldName+']').val(0);
+        }
+    });
+});
+</script> 
+  </body>
+</html>

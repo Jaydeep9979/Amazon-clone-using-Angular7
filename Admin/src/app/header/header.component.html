@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#" style="color: rgb(243,168,71);">R & J admin</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon">+ Add Product</span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Product & Categories
+          </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="/product" routerLinkActive="active">Add Product</a>
+            <a class="dropdown-item" routerLink="/category" routerLinkActive="active">Add Category</a>
+            <a class="dropdown-item" routerLink="/subcategory" routerLinkActive="active">Add Subcategory</a>
+            <a class="dropdown-item" routerLink="/childcategory" routerLinkActive="active">Add Childcategory</a>
+          </div> 
+          
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" routerLink="/slider" routerLinkActive="active" >Sliders</a>
+         </li>
+          <li class="nav-item">
+          <a class="nav-link" routerLink="/testimon" routerLinkActive="active">Testimonials</a>
+         </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/review" routerLinkActive="active">Reviews</a>
+         </li>
+         &nbsp;&nbsp;
+         
+  
+      </ul>
+      
+    </div>
+    <button id="login" class="btn" ><a  routerLinkActive="active" (click)="onLogout()"style="color: black"><i class="fa fa-sign-in" aria-hidden="true"></i>
+   <b> logout</b></a>
+  </button>
+</nav>

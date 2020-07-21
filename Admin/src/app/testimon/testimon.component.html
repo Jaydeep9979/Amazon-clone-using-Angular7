@@ -1,0 +1,89 @@
+  
+<app-header></app-header>
+<div class="container-fluid" data-aos="zoom-in-down"  data-aos-duration="1500" >
+    <div class="col-md-12">
+     <div class="card-header">
+        <div class="panel panel-primary">
+         <div class="panel-heading">
+           <h3 >Add Testimonial Details</h3>
+         </div>
+        </div>
+     </div>
+     <form role="form">
+       <div class="card-body">
+         <div class="form-group">
+           <label for="email">Testimonial</label>
+           <input type="text" class="form-control" id="Product" placeholder="Enter  Name ..." name="email">
+         </div>
+         
+         <div class="form-group">
+           <label for="email">Testimonial's Designation</label>
+           <input type="text" class="form-control" id="Product" placeholder="Enter Testimonial Name ..." name="email">
+         </div>
+         <div class="form-group">
+           <label for="email">Description</label>
+           <input type="textarea" class="form-control" id="Product" placeholder="Enter Testimonial Name ..." name="email">
+         </div>
+         
+         <div class="form-group">
+           <label for="exampleInputFile">Testimonial Image</label>
+           <div class="input-group">
+             <div class="custom-file mb-3">
+               <input type="file" class="custom-file-input" id="exampleInputFile" multiple>
+               <label class="custom-file-label" for="exampleInputFile">Choose Image Files</label>
+             </div>
+           </div>
+         </div>
+         
+         <button type="submit" class="btn btn-success">Submit</button>
+       </div>
+     </form>
+   </div>
+   </div>
+   
+   
+   <div class="container-fluid" style="padding-top: 40px;" data-aos="zoom-in-down"  data-aos-duration="1500">
+     <h2>Available Sliders</h2>
+     <div class="md-form mt-0">
+       <input id="myInput" class="form-control" type="text" placeholder="Search..">
+       </div>
+   
+     <table class="table table-hover table-bordered">
+       <thead class="thead-dark">
+         <tr>
+           <th>Tetimonails id</th>
+           <th>Testimonial Name</th>
+           <th>Testimonial Image</th>
+           <th>Actions</th>
+           <th></th>
+         </tr>
+       </thead>
+       <tbody id="myTable">
+         <tr>
+           <td>1</td> 
+           <td>Jaydeep Mahajan</td>
+           <td><img src="assets/IMG/e.jpg" height="30px" width="50px"></td>
+   
+           <td><a href="#" class="btn btn-primary"><i class="fa fa-edit fa-lg" onclick="change()" ></i>Active</a>&nbsp;&nbsp;&nbsp;&nbsp;
+             <a class="btn btn-danger" href="#"><i class="fa fa-trash-o fa-lg"></i> Delete</a>
+           </td>
+         </tr>
+         <tr>
+            <td>1</td>
+           <td>Raj Panchal</td>
+           <td><img src="assets/IMG/e.jpg" height="30px" width="50px"></td>
+           <td><a href="#" class="btn btn-primary"><i class="fa fa-edit fa-lg" onclick="change()"  ></i>Active</a>&nbsp;&nbsp;&nbsp;&nbsp;
+             <a class="btn btn-danger" href="#"><i class="fa fa-trash-o fa-lg"></i> Delete</a></td>
+         </tr>
+         <tr>
+            <td>2</td>
+           <td>Parth Patel</td>
+           <td><img src="assets/IMG/e.jpg" height="30px" width="50px"></td>
+           <td><a href="#" class="btn btn-primary"><i class="fa fa-edit fa-lg" onclick="change()"  ></i>Active</a>&nbsp;&nbsp;&nbsp;&nbsp;
+             <a class="btn btn-danger" href="#"><i class="fa fa-trash-o fa-lg"></i> Delete</a></td>
+         </tr>
+       </tbody>
+     </table>
+    
+   </div>
+   

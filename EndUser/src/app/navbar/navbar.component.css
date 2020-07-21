@@ -1,0 +1,25 @@
+#nav2{
+    background-color: black;
+    margin-top:0px;
+  }
+  
+  #nav2 .navbar-nav li{
+    padding: 0px 0px 0px 0px;
+  }
+
+  #nav2 .navbar-nav li ul{
+    padding:5px;
+  }
+  
+  #navbardrop {
+    color: #fff;
+  }
+  
+  #navbardrop:hover
+  {
+    color: #0000ff;
+  }
+  #nav2 .navbar-nav li a:hover{
+      background-color: #ffffff;
+      color: #ff0000;
+  }

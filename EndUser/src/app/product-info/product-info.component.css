@@ -1,0 +1,167 @@
+.outline{
+    border:1px solid #000000;
+    border-radius: 5px;
+    padding:1px;
+  }
+  
+  p.product-name{
+    font-size: 30px;
+    text-decoration: underline;
+    color:#0000ff;
+  }
+  
+  .payment-available{
+      padding: 10px 0 20px;
+  }
+  .payment-available ul li{
+      display: inline-block;
+      padding: 5px 10px;
+      margin-left: 15px;
+      color: #757575;
+      box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.08);
+  }
+  .payment-available ul li i{
+      color: #FF0000;
+      margin-right: 5px;
+  }
+  .payment-available ul li i.available{
+      color: #008000;
+  }
+  
+  .product-filter form{
+     display: inline-flex;
+     margin-left: 30px;
+  }
+  .product-filter form a.qtyminus{
+      width: 30px;
+      height: 30px;
+      border: 1px solid #ff003c;
+      border-radius: 5px 0px 0px 5px;
+      display: inline-block;
+      text-align: center;
+      line-height: 30px;
+      background-color: #ff003c;
+      color: #fff;
+  }
+  
+  .product-filter form a.qtyplus{
+      width: 30px;
+      height: 30px;
+      border: 1px solid #ff003c;
+      border-radius: 0px 5px 5px 0px;
+      display: inline-block;
+      text-align: center;
+      line-height: 30px;
+      background-color: #ff003c;
+      color: #fff;
+  }
+  .product-filter form input{
+      height: 30px;
+      padding: 5px;
+      width: 100px;
+      border: 1px solid #ff003c;
+  }
+  
+  .product-filter a:hover{
+    text-decoration: none;
+  }
+  
+  .btn-section1 ul li {
+    display: inline-flex;
+    padding: 10px 0px 20px;
+    margin-right: 10px;
+    list-style-type: none;
+  }
+
+  .heading {
+    font-size: 30px;
+    text-decoration: underline;
+    font-variant:small-caps;
+    color:grey;
+    position:relative; 
+  }
+  
+  .que-head{
+    font-size: 25px;
+    font-style: normal;
+    color: #0000ff;
+    margin-left:25px;
+  }
+  
+  .faq-section ul li{
+      list-style-type: decimal;
+      padding: 10px 0;
+  }
+  .faq-section ul li .question{
+      font-weight: 700;
+      color: #000000;
+      font-size: 18px;
+      letter-spacing: 1px;
+      font-style: initial;
+  }
+  .faq-section ul li .answer{
+      color: #0000ff;
+      font-size: 18px;
+  }
+  
+  .customer_Que{
+    border:1px solid #635d40;
+    border-radius: 5px;
+  }
+  
+  .review-head{
+    font-size: 25px;
+    text-align: left;
+    margin-left: 20px; 
+  }
+  
+  .date{
+    font-size: 16px;
+    color:grey;
+  }
+  
+  .info-review{
+    text-align: justify-all;
+    margin-top:10px;
+  }
+  
+  .btn-section ul li{
+    list-style-type: none;
+   }
+
+   #a1{
+    background-color: #0000ff;
+    color: #ffffff;
+    padding: 5px 5px;
+    background-image: none;
+    display: inline-block;
+    border: 1px solid transparent;
+    transition: all ease-in-out 0.3s;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin:5px;
+}
+ #a2{
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 5px 5px;
+    background-image: none;
+    display: inline-block;
+    border: 1px solid transparent;
+    transition: all ease-in-out 0.3s;
+    border-radius: 4px;
+    font-size: 15px;
+    margin:5px;
+}
+ #a1:hover {
+    background-color: #fff;
+    color: #ff003c;
+    border: 1px solid #ff003c;
+}
+
+#a2:hover {
+    background-color: #fff;
+    color: #ff003c;
+    border: 1px solid #ff003c;
+}

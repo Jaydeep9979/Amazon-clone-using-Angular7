@@ -1,0 +1,228 @@
+<header>  
+ <div class="header-top">
+    <div class="container-fluid">
+         <div class="row">
+             <div class="col-xl-12">
+                <nav class="navbar navbar-expand-lg" >
+                 <div class="logo">
+                 <a routerLink="/" routerLinkActive="active">
+                     <img src="assets/image/R&J.jpg"></a>
+                     <!--<img src="Images/logo2.jpg">-->
+                 </div>
+                 
+                 <!--<form #search="ngForm" (ngSubmit)=searchitem(search.value)></form>-->
+                 <!--<div class="wrap">
+                    <div class="search">
+                       <input type="text" class="searchTerm" placeholder="What are you looking for?" ngModel required name="src">
+                       <button type="submit" class="searchButton">
+                         <span><img src="assets/image/search.png"></span>
+                       </button>
+                      
+                    </div>
+                 </div>-->
+                <!--</form>-->
+                 <button class="navbar-toggler" type="button" 
+                         data-toggle="collapse" 
+                         data-target="#navbarSupportedContent"  
+                         aria-expanded="false"
+                         aria-controls="navbarSupportedContent" id="mybtn">
+                 <span class="navbar-toggler-icon"></span>
+                 </button>                 
+                 <div class="profile-detail collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                  <div *ngIf="!srv.flag &&  getname(name)==null;else elseBlock">
+                                  <a class="nav-link" data-toggle="modal" data-target="#id01" href="#">Login</a>
+                                  </div>
+                                 <ng-template #elseBlock>
+                                   <a class="nav-link" routerLink="#" (click)="logout(getname(name))">Welcome {{getname(name)}}!</a>
+                                  </ng-template>
+                                </li>
+                                <li class="nav-item">
+                                  <div *ngIf="!srv.flag && getname(name)==null">
+                                  <a class="nav-link" routerLink="#" data-toggle="modal" data-target="#id02">Sign Up</a>
+                                  </div>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" routerLink="/product_list" routerLinkActive="active">Today's deals</a>
+                                </li>
+                                <li class="nav-item">
+                                    <div *ngIf="getname(name)!=null">
+                                    <a class="nav-link" routerLink="#" (click)="getinfo(getname(name))">Show Details</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                  <div *ngIf="getname(name)!=null">
+                                  <a class="nav-link" routerLink="/cart_list" routerLinkActive="active">My Cart</a>
+                                  </div>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" routerLink="/aboutUs" routerLinkActive="active">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" routerLink="/contactUs" routerLinkActive="active">Contact Us</a>
+                                </li>
+                        </ul>
+                </div> 
+                <form class="form-inline mr-auto" #search="ngForm">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" #item="ngModel" ngModel name="search">
+                    <button class="btn btn-outline-success btn-rounded btn-sm my-0" (click)="searchItem(item.value)">Search</button>
+                  </form>
+                </nav>  
+             </div>
+         </div>
+    </div>
+ </div>
+<header>
+  
+   <div id="id01" class="modal fade" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <form class="modal-content"  #login="ngForm" (ngSubmit)=loginauth(login.value)>
+        <div class="imgcontainer">
+          <span data-dismiss="modal" class="close" title="Close Modal">&times;</span>
+          <img src="assets/image/R&J.jpg" alt="Avatar" class="avatar">
+        </div>
+        <div class="container">
+        <div class="form-group">
+          <label for="uname"><b><h5>Username</h5></b></label>
+          <input type="text" placeholder="Enter Username" name="UserName" required ngModel class="form-control" #name="ngModel" minlength="3" maxlength="10">
+          <div *ngIf = "name.invalid && (name.dirty || name.untouched)">
+              <div *ngIf = "name.errors.required">
+                  <h5><p class="text-danger">*Name is required.</p></h5>
+              </div>
+            <div *ngIf = "name.errors.minlength">
+                 <h5><p class="text-danger">*Name must be at least 3 characters long.</p></h5>
+            </div>
+            <div *ngIf = "name.errors.maxlength">
+                <h5><p class="text-danger">*Name must be at most 10 characters long.</p></h5>
+           </div>
+        </div>
+        </div>
+        
+          <div class="form-group">
+          <label for="psw"><b><h5>Password</h5></b></label>
+          <input type="password" placeholder="Enter Password" name="Password" required ngModel class="form-control" #psd="ngModel">
+          <div *ngIf = "psd.invalid && (psd.dirty || psd.untouched)">
+                <div *ngIf="psd.errors.required">
+                   <h5><p class="text-danger">* Password is required.</p></h5>
+                </div>
+          </div>
+          </div>
+          <button type="submit" [disabled]=!this.login.valid>Login</button>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" data-dismiss="modal" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    </div>
+
+    <div id="id02" class="modal fade" role="dialog" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+      <form class="modal-content" #register=ngForm (ngSubmit)=Register(register.value)>
+        <div class="imgcontainer">
+          <span class="close" data-dismiss="modal">&times;</span>
+          <img src="assets/image/R&J.jpg" alt="Avatar" class="avatar">
+        </div>
+        <div class="container">
+          <div class="form-group">
+             <label for="First Name"><b>First Name</b></label>
+             <input type="text" placeholder="FirstName" name="FirstName" required  ngModel class="form-control" #fname="ngModel" minlength="3" maxlength="10" pattern="[a-zA-Z]*"> 
+             <div *ngIf="fname.invalid && (fname.dirty || fname.untouched)">
+                <div *ngIf="fname.errors.required">
+                    <h6><p class="text-danger">* FirstName is required.</p></h6>
+                </div>
+                <div *ngIf="fname.errors.pattern">
+                    <h6><p class="text-danger">* FirstName should contain only characters.</p></h6>
+                </div>
+                <div *ngIf="fname.errors.minlength">
+                    <h6><p class="text-danger">* FirstName must be at least 3 characters.</p></h6>
+                </div>
+             </div>
+          </div>
+
+          <div class="form-group">
+             <label for="Last Name"><b>Last Name</b></label>
+             <input type="text" placeholder="LastName" name="LastName" required ngModel class="form-control" #lname="ngModel" minlength="3" pattern="[a-zA-Z]*">
+             <div *ngIf="lname.invalid && (lname.dirty || lname.untouched)">
+                <div *ngIf="lname.errors.required">
+                    <h6><p class="text-danger">* LastName is required.</p></h6>
+                </div>
+                <div *ngIf="lname.errors.pattern">
+                    <h6><p class="text-danger">* LastName should contain only characters.</p></h6>
+                </div>
+                <div *ngIf="lname.errors.minlength">
+                    <h6><p class="text-danger">* LastName must be at least 3 characters.</p></h6>
+                </div>
+             </div>
+          </div>
+
+          <div class="form-group">
+               <label for="psw1"><b>Password</b></label>
+               <input type="password" placeholder="Password" name="Password" required ngModel class="form-control" #p1="ngModel" pattern="^[a-zA-Z]\w{3,14}$">
+               <div *ngIf="p1.invalid && (p1.dirty || p1.untouched)">
+                  <div *ngIf="p1.errors.required">
+                      <h6><p class="text-danger">* Password is required.</p></h6>
+                  </div>
+                  <div *ngIf="p1.errors.pattern">
+                      <h6><p class="text-danger">* password's first character must be a letter, it must contain at least 4 characters and no more than 15 characters and no characters other than letters, numbers and the underscore may be used</p></h6>
+                  </div>
+               </div>
+          </div>
+
+          <div class="form-group">
+            <label for="psw2"><b>Re-Password</b></label>
+            <input type="password" placeholder="Re-Enter Password" name="Confirm_Password" required ngModel class="form-control" #p2="ngModel" pattern="{{p1.value}}">
+            <div *ngIf="p2.invalid && (p2.dirty || p2.touched)">
+              <div *ngIf="p2.errors.required">
+                  <h6><p class="text-danger">* Password is required.</p></h6>
+              </div>
+              <div *ngIf="p2.errors.pattern">
+                  <h6><p class="text-danger">* Password must be same as above.</p></h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Email Address" name="Email" required ngModel class="form-control" #email="ngModel" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
+            <div *ngIf="email.invalid && (email.dirty || email.untouched)">
+                <div *ngIf="email.errors.required">
+                    <h6><p class="text-danger">* Email is required.</p></h6>
+                </div>
+                <div *ngIf="email.errors.pattern">
+                    <h6><p class="text-danger">* Email must be in valid form.</p></h6>
+                </div>
+             </div>
+          </div>
+
+          <div class="form-group">
+             <label for="phone_no"><b>Phone Number</b></label>
+             <input type="text" placeholder="Phone Number" name="PhoneNo" required ngModel class="form-control" #contact="ngModel" pattern="^\d{10}$" minlength="10">
+             <div *ngIf="contact.invalid && (contact.dirty || contact.untouched)">
+                <div *ngIf="contact.errors.required">
+                    <h6><p class="text-danger">* Contact Number is required.</p></h6>
+                </div>
+                <div *ngIf="contact.errors.minlength">
+                    <h6><p class="text-danger">* Contact Number must contain 10 Digits. </p></h6>
+                </div>
+                <div *ngIf="contact.errors.pattern">
+                    <h6><p class="text-danger">* Contact should contain only Digits.</p></h6>
+                </div>
+             </div>
+          </div>
+
+          <button type="submit" [disabled]=!this.register.valid> 
+              Sign Up
+          </button> 
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" data-dismiss="modal" class="cancelbtn">Cancel</button>
+        </div>
+      </form>
+     </div>
+    </div>
+
+  

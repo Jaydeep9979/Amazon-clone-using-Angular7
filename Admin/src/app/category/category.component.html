@@ -1,0 +1,60 @@
+<app-header ></app-header>
+
+<div class="container-fluid" data-aos="zoom-in-down"  data-aos-duration="1500">
+    <div class="col-md-12">
+     <div class="card-header" style="margin-top:100px">
+        <div class="panel panel-primary" id="hi">
+         <div class="panel-heading">
+           <h3>Add Category</h3>
+         </div>
+        </div>
+     </div>
+     <form *ngIf="check ; else elseBlock;" #categoryform="ngForm" (ngSubmit)=updatecat(categoryform.value) role="form">
+       <div class="card-body">
+         <div class="form-group">
+               <label for="Productdesc">Category Name</label>
+              <input type="Text" name="category" [(ngModel)]="category" class="form-control" placeholder="Type Category Name ..." ngModel>
+         </div>
+         <button type="submit" class="btn btn-success" >Update</button>
+       </div>
+     </form>
+     <ng-template #elseBlock>
+     <form  #categoryform="ngForm" (ngSubmit)=cat(categoryform.value) role="form">
+      <div class="card-body">
+        <div class="form-group">
+              <label for="Productdesc">Category Name</label>
+             <input type="Text" name="category" class="form-control" placeholder="Type Category Name ..." ngModel>
+        </div>
+        <button type="submit" class="btn btn-success" >Submit</button>
+      </div>
+    </form>
+  </ng-template>
+   </div>
+   </div>
+   
+   <div class="container-fluid" style="padding-top: 40px;" data-aos="zoom-in-down"  data-aos-duration="1500">
+     <h2>Available Categories</h2>
+     <div class="md-form mt-0">
+       <input id="myInput" class="form-control" type="text" placeholder="Search..">
+       </div>
+   
+     <table class="table table-hover table-bordered">
+       <thead class="thead-dark">
+         <tr>
+           <th>Category Name</th>
+           <th>Actions</th>
+         </tr>
+       </thead>
+       <tbody id="myTable">
+         <tr *ngFor="let obj of Repdata,index as id">
+           <td>{{obj.category}}</td>
+           <td><a  class="btn btn-primary" (click)="edit(obj)"><i class="fa fa-edit fa-lg"  ></i> Edit</a>&nbsp;&nbsp;&nbsp;&nbsp;
+             <a class="btn btn-danger" (click)="delcat(id);"><i class="fa fa-trash-o fa-lg"></i> Delete</a>
+           </td>
+         </tr> 
+       </tbody>
+     </table>
+    
+   </div>
+   
+   
