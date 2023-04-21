@@ -27,7 +27,7 @@
     "express-session": "^1.17.0",
     "http-errors": "^1.7.3",
     "jquery": "^3.4.1",
-    "mongoose": "^5.7.5",
+    "mongoose": "^5.13.15",
     "morgan": "^1.9.1",
     "ngx-bootstrap": "^5.2.0",
     "ngx-slick-carousel": "^0.4.6",
